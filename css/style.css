@@ -1,0 +1,119 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ /*
+ * -- BASE COLOURS --
+ * Selected colours for base palette
+ * grey color: #F8F8F5
+ * green color: #00DAA6
+ * teal accent-3
+ * grey lighten-5
+ * pink accent: #FFE1EA
+ * grey accent: #444440
+ * grey accent: #7f8c8d
+ */
+
+body {
+  background-color: #f8f8f5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.header {
+  color: #00daa6;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444440;
+}
+
+nav {
+  opacity: 0.7;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 40vh;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  opacity: 0.8;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+#index-banner {
+  min-height: 80vh;
+}
+
+#index-container {
+  margin-top: 15%;
+}
+
+#download-button {
+  background-color: rgba(69,90,100, 0.3);
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#scroll-button {
+  background-color: rgba(69,90,100, 0.3);
+}
+
+#scroll-banner {
+  margin-top: 10%;
+}
+
+.circle-image > img{
+  margin: 50px auto;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 25px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
