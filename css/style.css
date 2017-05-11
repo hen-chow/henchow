@@ -23,7 +23,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -104,6 +104,11 @@ p {
   background-size: contain;*/
 }
 
+.main-container, .main-section {
+  width: 900px;
+  margin: 0 auto;
+}
+
 #skills-container {
   font-size: 5em;
   color: #00DAA6;
@@ -112,7 +117,7 @@ p {
 
 .project-feature {
   width: 45vw;
-  margin: 20px;
+  vertical-align: top;
 }
 
 @media only screen and (max-width : 992px) {
