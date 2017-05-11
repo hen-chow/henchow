@@ -98,7 +98,21 @@ p {
   margin: 50px auto;
   border-radius: 100px;
   height: 200px;
-  width: 200px;
+  /*width: 200px;*/
+  /*background-image: url("../img/Hen.jpg");*/
+  /*background-position: center;
+  background-size: contain;*/
+}
+
+#skills-container {
+  font-size: 5em;
+  color: #00DAA6;
+  /*text-align: center;*/
+}
+
+.project-feature {
+  width: 45vw;
+  margin: 20px;
 }
 
 @media only screen and (max-width : 992px) {
