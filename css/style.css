@@ -1,13 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
- /*
- * -- BASE COLOURS --
+/* -- BASE COLOURS --
  * Selected colours for base palette
  * grey color: #F8F8F5
  * green color: #00DAA6
@@ -44,7 +35,8 @@ p {
   line-height: 2rem;
 }
 
-.fa-phone-square, .fa-github, .fa-envelope, .fa-linkedin-square {
+.fa-phone-square, .fa-github, .fa-envelope, .fa-linkedin-square, .fa-desktop {
+  font-size: 3em;
   color: #00DAA6;
 }
 
@@ -53,7 +45,7 @@ p {
 }
 
 .contact-icon {
-  font-size: 5em;
+  font-size: 1.5em;
   padding: 0;
 }
 
