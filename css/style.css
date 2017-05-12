@@ -67,11 +67,14 @@ nav.nav-extended .nav-content {
   line-height: normal;
 }
 
-nav li {
+nav ul li {
   display: inline-block;
   text-align: right;
-  padding-left: 20px;
-  padding-right: 20px;
+  transition: background-color .5s;
+}
+
+nav ul li.active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -80,9 +83,17 @@ nav ul {
   margin: 0 auto;
 }
 
-nav a {
+nav ul a {
   color: #ffff;
   text-decoration: none;
+  cursor: pointer;
+  transition: background-color .5s;
+  padding: 0 20px;
+  display: block;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav i,
