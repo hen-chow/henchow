@@ -8,33 +8,119 @@
  * dark dark grey accent: #263238
  */
 
- * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- .container {
-   margin: 0 auto;
-   max-width: 1280px;
-   width: 90%;
- }
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  /*padding: 20px;*/
+  /*min-height: 20vh;*/
+}
 
- body, html {
-   height: 100%;
- }
+body, html {
+  height: 100%;
+}
 
- body {
-   background-color: #eceff1;
-   font-family: 'Open Sans', sans-serif;
- }
+body {
+  background-color: #eceff1;
+  font-family: 'Open Sans', sans-serif;
+}
 
- h1, h2 {
-   font-family: 'Kaushan Script', cursive;
- }
+h1, h2, h3 {
+  font-family: 'Kaushan Script', cursive;
+}
 
-/* -- NAV BAR --
+h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  margin: 20px auto 0;
+  height: 30%;
+  padding: 0;
+  width: 768px;
+  display: block;
+  border: 1px solid green;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  border: 1px solid red;
+  display: block;
+  height: 15%;
+}
+
+.header.h1 {
+  font-size: 3em;
+  color: #263238;
+  line-height: 36px;
+  /*color: #00DAA6;*/
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 55%;
+  width: 100%;
+  height: 15%;
+  border: 1px solid blue;
+  display: block;
+  line-height: 15px;
+}
+
+.action {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  height: 15%;
+  display: block;
+  border: 1px solid green;
+}
+
+.button-large {
+  padding: 10px 30px;
+}
+/*.main.container {
+  border: 1px solid red;
+  /*height: 50%;*/
+  /*padding: 15%;*/
+
+#projects-button {
+  background-color: rgba(69,90,100, 0.3);
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+
+.action a {
+  text-decoration: none;
+}
+
+
+/* -- navbar--
 */
+
 .navbar-fixed {
   position: relative;
   height: 60px;
@@ -53,9 +139,9 @@ nav {
   line-height: 60px;
 }
 
-nav.nav-extended {
+/*nav.nav-extended {
   height: auto;
-}
+}*/
 
 nav.nav-extended .nav-wrapper {
   min-height: 60px;
@@ -96,15 +182,6 @@ nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-nav i,
-nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
-  display: block;
-  font-size: 24px;
-  height: 60px;
-  line-height: 60px;
-}
-
 nav .nav-wrapper {
   position: relative;
   height: 100%;
@@ -114,15 +191,24 @@ nav .brand-logo{
   display: inline-block;
   font-size: 2em;
   font-family: 'Kaushan Script', cursive;
+  text-decoration: none;
 }
 
-.header {
-  color: #00daa6;
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
 }
 
 nav ul a,
 nav .brand-logo, nav .fa-github, nav .fa-linkedin-square {
   color: #263238;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
 }
 
 nav .fa-github, nav .fa-linkedin-square {
@@ -144,118 +230,12 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
- .parallax-container .section {
+ /*.parallax-container .section {
    width: 100%;
-   padding: 0;
- }
-
- #feature-content {
-  margin: 0;
-  overflow: hidden;
- }
-
- /*#index-banner {
-   min-height: 80vh;
+   padding: 20px 0 0 0;
+   height: 50%;
+   top: 30%;
+   position: absolute;
  }*/
-
- /*#index-container {
-   margin-top: 15%;
- }*/
-
-
-p {
-  line-height: 2rem;
-}
-
-.fa-phone-square, .fa-github, .fa-envelope, .fa-linkedin-square, .fa-desktop {
-  font-size: 3em;
-  color: #00DAA6;
-}
-
-.card {
-  margin: 10px;
-}
-
-.contact-icon {
-  font-size: 1.5em;
-  padding: 0;
-}
-
-.button-collapse {
-  color: #26a69a;
-}
-
-
-#download-button {
-  background-color: rgba(69,90,100, 0.3);
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-#scroll-button {
-  background-color: rgba(69,90,100, 0.3);
-}
-
-#scroll-banner {
-  margin-top: 10%;
-}
-
-.circle-image > img{
-  margin: 50px auto;
-  border-radius: 100px;
-  height: 200px;
-  /*width: 200px;*/
-  /*background-image: url("../img/Hen.jpg");*/
-  /*background-position: center;
-  background-size: contain;*/
-}
-
-.main-container, .main-section {
-  width: 900px;
-  margin: 0 auto;
-}
-
-#skills-container {
-  font-size: 5em;
-  color: #00DAA6;
-  /*text-align: center;*/
-}
-
-.project-feature {
-  width: 45vw;
-  vertical-align: top;
-}
-
-
-/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-width : 1024px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-    background-attachment: scroll;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 25px;
-  display: inline-block;
-  vertical-align: middle;
-
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
