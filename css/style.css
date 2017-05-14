@@ -94,9 +94,9 @@ h6 {
   left: 0;
   top: 40%;
   width: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   display: block;
-  height: 15%;
+  height: auto;
 }
 
 .header.h1 {
@@ -117,7 +117,7 @@ h6 {
   top: 55%;
   width: 100%;
   height: 15%;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   display: block;
   line-height: 15px;
 }
@@ -129,7 +129,7 @@ h6 {
   width: 100%;
   height: 15%;
   display: block;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 .circle-image > img{
@@ -140,7 +140,8 @@ h6 {
 
 .skills-container {
   font-size: 4em;
-  color: #00DAA6;
+  /*color: #00DAA6;*/
+  color: #fce4ec;
   margin: 20px 0;
 }
 
@@ -162,6 +163,14 @@ h6 {
 #projects {
   padding: 15px 0;
 }
+
+#skills {
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #b0bec5;
+  padding: 15px 0;
+}
+
 
 .bottom {
   margin-bottom: 20px;
@@ -197,7 +206,8 @@ h6 {
 
 .button-large {
   padding: 10px 40px;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  border-radius: 10px;
 }
 /*.main.container {
   border: 1px solid red;
@@ -205,14 +215,14 @@ h6 {
   /*padding: 15%;*/
 
 #projects-button {
-  background-color: rgba(69,90,100, 0.3);
-  border: 2px solid white;
+  background-color: rgba(69,90,100, 0.1);
+  border: 2px solid #fce4ec;
   /*border-radius: 15px;*/
 }
 
 #projects-button  a {
   text-decoration: none;
-  color: white;
+  color: #fce4ec;
 }
 
 .projects.fa.fa-github, .projects.fa.fa-desktop {
