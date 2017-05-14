@@ -76,6 +76,10 @@ h6 {
   /*border: 1px solid green;*/
 }
 
+.project-row {
+  width: 1024px;
+}
+
 .block {
   margin-bottom: 20px;
 }
