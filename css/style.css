@@ -41,6 +41,8 @@ h4, h5, h6 {
 
 h1 {
   font-size: 3em;
+  color: #00DAA6;
+  text-shadow: 2px 2px #000000;
 }
 
 h2 {
@@ -61,6 +63,10 @@ h5 {
 
 h6 {
   font-size: 1em;
+}
+
+.caption h4 {
+  color: white;
 }
 
 .center {
@@ -105,7 +111,6 @@ h6 {
 
 .header.h1 {
   font-size: 3em;
-  color: #263238;
   line-height: 36px;
   /*color: #00DAA6;*/
 }
@@ -214,9 +219,10 @@ h6 {
 }
 
 .button-large {
-  padding: 10px 40px;
+  padding: 10px 50px;
   font-size: 1.25em;
   border-radius: 10px;
+  letter-spacing: 1px;
 }
 /*.main.container {
   border: 1px solid red;
@@ -378,20 +384,21 @@ nav {
 .parallax-container {
   height: 100%;
   line-height: 0;
-  background-image: url("../img/palm_tree.jpg");
+  background-color: #263238;
+  /*background-image: url("../img/palm_tree.jpg");*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0.85;
 }
- /*.parallax-container .section {
-   width: 100%;
-   padding: 20px 0 0 0;
+
+ .secondary {
    height: 50%;
-   top: 30%;
-   position: absolute;
- }*/
+   background-image: url("../img/palm_tree_paradise.jpg");
+   opacity: 0.9;
+ }
  /* -- FOOTER --
  */
 
@@ -414,4 +421,15 @@ footer.page-footer ul {
 .footer-text {
   font-size: 0.85em;
   line-height: 25px;
+}
+
+/* -- BUBBLE ANIMATION --
+*/
+
+.bubble {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  /*border: 1px solid rgb(0, 218, 166);*/
+  border-radius: 100%;
 }
