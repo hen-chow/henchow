@@ -18,8 +18,6 @@
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
-  /*padding: 20px;*/
-  /*min-height: 20vh;*/
 }
 
 body, html {
@@ -47,6 +45,7 @@ h1 {
 
 h2 {
   font-size: 2.5em;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -74,24 +73,35 @@ h6 {
 }
 
 .row {
-  margin: 20px auto 0;
-  height: 30%;
-  padding: 0;
+  margin: 20px auto;
   width: 768px;
-  display: block;
-  /*border: 1px solid green;*/
+}
+
+.intro-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-row {
+  display: flex;
 }
 
 .project-row {
   width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-intro {
+  width: 100%;
 }
 
 .block {
-  margin-bottom: 20px;
+  width: 60%;
+  margin: 15px;
 }
 
 .block li {
-  /*line-height: 30px;*/
   list-style: none;
 }
 
@@ -104,7 +114,6 @@ h6 {
   left: 0;
   top: 40%;
   width: 100%;
-  /*border: 1px solid red;*/
   display: block;
   height: auto;
 }
@@ -112,7 +121,6 @@ h6 {
 .header.h1 {
   font-size: 3em;
   line-height: 36px;
-  /*color: #00DAA6;*/
 }
 
 .headline {
@@ -132,7 +140,6 @@ h6 {
   top: 55%;
   width: 100%;
   height: 15%;
-  /*border: 1px solid blue;*/
   display: block;
   line-height: 15px;
 }
@@ -144,20 +151,19 @@ h6 {
   width: 100%;
   height: 15%;
   display: block;
-  /*border: 1px solid green;*/
 }
 
 .circle-image > img{
-  margin: 50px auto;
+  margin: 100px auto;
   border-radius: 100px;
   height: 200px;
 }
 
 .skills-container {
   font-size: 4em;
-  /*color: #00DAA6;*/
   color: #fce4ec;
-  margin: 20px 0;
+  margin: 10px 0;
+  width: 24%;
 }
 
 .skills-container ul {
@@ -190,10 +196,17 @@ h6 {
   margin-bottom: 30px;
 }
 
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
 .contact-icon {
   color: #263238;
   font-size: 1em;
   text-align: left;
+  width: 50%;
 }
 
 .contact-icon a:link {
@@ -224,15 +237,10 @@ h6 {
   border-radius: 10px;
   letter-spacing: 1px;
 }
-/*.main.container {
-  border: 1px solid red;
-  /*height: 50%;*/
-  /*padding: 15%;*/
 
 #projects-button {
   background-color: rgba(69,90,100, 0.1);
   border: 2px solid #fce4ec;
-  /*border-radius: 15px;*/
 }
 
 #projects-button  a {
@@ -246,34 +254,14 @@ h6 {
   padding: 15px 15px 0;
 }
 
-.col-xs-12, .col-md-12 {
-  width: 100%;
+.page-footer .center, ul {
+  margin-top: 15px;
 }
 
-.col-md-4, .col-md-8, .col-xs-12, .col-md-12, .col-xs-4, .col-xs-6 {
-  display: inline-block;
-}
-
-.col-md-4 {
-  width: 30%;
-  margin: 0 15px;
+.project-info {
   vertical-align: top;
+  padding: 0 15px;
 }
-
-.col-md-8 {
-  width: 60%;
-  margin: 20px 15px;
-}
-
-.col-xs-4 {
-  width: 24%;
-}
-
-.col-xs-6 {
-  width: 49%;
-  vertical-align: top;
-}
-
 
 /* -- navbar--
 */
@@ -286,6 +274,8 @@ h6 {
 
 .navbar-fixed nav {
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 nav {
@@ -297,24 +287,19 @@ nav {
   margin-top: 0;
 }
 
-/*nav.nav-extended {
-  height: auto;
-}*/
 
-nav.nav-extended .nav-wrapper {
+nav .nav-wrapper {
   min-height: 60px;
   height: auto;
-}
-
-nav.nav-extended .nav-content {
-  position: relative;
-  line-height: normal;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul li {
-  display: inline-block;
-  text-align: right;
   transition: background-color .5s;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
 }
 
 nav ul li.active {
@@ -322,9 +307,7 @@ nav ul li.active {
 }
 
 nav ul {
-  float: right;
-  vertical-align: top;
-  margin: 0 auto;
+  display: flex;
 }
 
 nav ul a {
@@ -333,7 +316,6 @@ nav ul a {
   cursor: pointer;
   transition: background-color .5s;
   padding: 0 20px;
-  display: block;
 }
 
 nav ul a:hover {
@@ -364,10 +346,6 @@ nav i.material-icons {
 nav ul a,
 nav .brand-logo, nav .fa-github, nav .fa-linkedin-square {
   color: #263238;
-  display: inline-block;
-  height: 60px;
-  line-height: 60px;
-  margin-top: -5px;
 }
 
 nav .fa-github, nav .fa-linkedin-square {
@@ -385,7 +363,6 @@ nav {
   height: 100%;
   line-height: 0;
   background-color: #263238;
-  /*background-image: url("../img/palm_tree.jpg");*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,7 +395,7 @@ footer.page-footer ul {
   list-style: none;
 }
 
-.footer-text {
+footer.footer-text {
   font-size: 0.85em;
   line-height: 25px;
 }
@@ -430,6 +407,5 @@ footer.page-footer ul {
   position: absolute;
   width: 3em;
   height: 3em;
-  /*border: 1px solid rgb(0, 218, 166);*/
   border-radius: 100%;
 }
