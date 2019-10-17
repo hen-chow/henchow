@@ -1,251 +1,116 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hen Chow // Portfolio</title>
-  <!-- JS -->
-  <script src="https://use.fontawesome.com/972bbe220c.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <!-- Icon CDN -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
-  <!-- Autopilot tracking code -->
-  <!-- <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="d24f1ab7e76e44f0a02cbce61cc296142a26e5c43d6c42a3a1ec53ab687cae27",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script> -->
-  <script type="text/javascript">(function(o){var b="http://localhost:3000/anywhere/",t="5d2e7a4592864497a539626b3b0734b7f273c33db06b4ae0aba9a1c60f962990",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+    <title>Hen Chow // Portfolio</title>
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">HEN CHOW</a>
-        <ul>
-          <li><a href="#intro">About</a></li>
-          <li><a href="https://drive.google.com/file/d/0B-gZiCoExi2pNEVIUGRGSm5SOGo3ZWZwZHV1TUJnT0dBMnRF/view" target="_blank">Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://www.linkedin.com/in/henchow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/hen-chow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="https://drive.google.com/file/d/18SeP1c-ltH7XvdL_lUawaBFUSLwh9bxM/view?usp=sharing" target="_blank">Resume</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </div>
 
-  <div class="parallax-container">
-    <div class="main container bubbles-canvas">
-      <div class="header center">
-        <h1>Let's build something awesome together!</h1>
-      </div>
-      <div class="caption">
-        <span><h4 class="center">Hi! My name is Hen Chow and I'm a full-stack web developer.</h4></span>
-      </div>
-      <div class="action center">
-        <button id="projects-button" class="button-large"><a href="#projects">See My Work</a></button>
-      </div>
+    <div class="owl-carousel">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+        <div class="slide4"></div>
+        <div class="slide5"></div>
+        <div class="slide6"></div>
     </div>
-  </div>
 
-
-  <div class="container" id="intro">
-    <div class="row intro-row">
-      <div class="circle-image">
-        <img src="img/hen.jpg">
-      </div>
-
-      <div class="block">
-        <h2 class="headline center">A bit about me</h2>
-        <p>I'm a Sydney-based junior full-stack developer recently graduated from General Assembly's Web Development Immersive course. I'm a problem solver looking to bring my passion for web dev to a full-time opportunity to grow and learn.</p>
-        <br>
+    <div class="text-container" id="about">
+        <h1>A bit about me</h1>
+        <p>I'm an Australian full-stack software engineer living in Seattle, WA. Graduated from General Assembly's Web Development Immersive course in 2017, I'm a problem-solver looking to bring my passion for web dev to a full-time opportunity to grow and learn.</p>
         <p>Here are a few <span class="highlight">quick things</span> about me:</p>
-        <br>
         <ul>
-          <li>I enjoy sinking my teeth into a problem and tackle each problem with <span class="highlight">gusto and determination</span></li><br>
-          <li>I take a <span class="highlight">logical</span> approach to my programming and problem-solving, breaking each down to smaller parts</li><br>
-          <li>I'm <strong>not</strong> a solo dancer, there's <span class="highlight">no 'I' in team</span> after all</li><br>
-          <li>An adventure seeker, I'm an <span class="highlight">extrovert introvert</span> who is just as comfortable with a good chat as well as a good book</li><br>
-          <li><span class="highlight">A lifelong curious student</span>, my motto is "The learning never stops."</li><br>
+            <li>I enjoy sinking my teeth into a problem and tackle each problem with <span class="highlight">gusto and determination</span></li><br>
+            <li>I take a <span class="highlight">logical</span> approach to my programming and problem-solving, breaking each
+        down to smaller parts</li><br>
+            <li>I'm <strong>not</strong> a solo dancer, there's <span class="highlight">no 'I' in team</span> after all</li><br>
+            <li>An adventure seeker, I'm an <span class="highlight">extrovert introvert</span> who is just as comfortable with a
+        good chat as well as a good book</li><br>
+            <li><span class="highlight">A lifelong curious student</span>, my motto is "The learning never stops."</li><br>
         </ul>
-        <a class="contact-links" href="https://drive.google.com/file/d/0B-gZiCoExi2pNF9zckk1VG5mLU0/view" target="_blank">Resume</a> |
+        <a class="contact-links" href="https://drive.google.com/file/d/18SeP1c-ltH7XvdL_lUawaBFUSLwh9bxM/view?usp=sharing" target="_blank">Resume</a> |
         <a class="contact-links" href="https://www.linkedin.com/in/henchow" target="_blank">LinkedIn</a> |
         <a class="contact-links" href="https://github.com/hen-chow" target="_blank">GitHub</i></a>
-      </div>
-    </div>
-  </div>
-
-  <div id="skills">
-    <div class="container">
-      <h2 class="headline center">My Skills</h2>
-      <div class="row skills-row">
-
-        <div class="center skills-container bottom">
-          <ul>
-            <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-            <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-            <li><i class="devicon-sass-original colored"></i></li>
-            <li><i class="devicon-javascript-plain colored"></i></li>
-          </ul>
-        </div>
-        <div class="center skills-container bottom">
-          <ul>
-            <li><i class="devicon-ruby-plain-wordmark colored"></i></li>
-            <li><i class="devicon-rails-plain-wordmark colored"></i></li>
-            <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
-            <li><i class="devicon-backbonejs-plain-wordmark colored"></i></li>
-          </ul>
-        </div>
-        <div class="center skills-container bottom">
-          <ul>
-            <li><i class="devicon-react-original-wordmark colored"></i></li>
-            <li><i class="devicon-nodejs-plain colored"></i></li>
-            <li><i class="devicon-bootstrap-plain-wordmark colored"></i></li>
-            <li><i class="devicon-photoshop-plain colored"></i></li>
-          </ul>
-        </div>
-        <div class="center skills-container bottom">
-          <ul>
-            <li><i class="devicon-postgresql-plain-wordmark colored"></i></li>
-            <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i></li>
-            <li><i class="devicon-heroku-plain-wordmark colored"></i></li>
-            <li><i class="devicon-github-plain colored"></i></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="secondary parallax-container">
-  </div>
-
-  <div class="container" id="projects">
-    <div class="row project-row">
-      <div class="project-intro bottom">
-        <h2 class="headline center">My Projects</h2>
-        <h5 class="center">Check out the projects I've worked on in the past few months...</h5>
-      </div>
-    </div>
-
-    <div class="row project-row">
-      <div class="project-info center bottom">
-        <img class="project-feature" src="img/garden_wizard_screen_resized.png">
-      </div>
-      <div class="project-info center bottom">
-        <div>
-          <h3 class="small-headline center">Garden Wizard</h3>
-          <p>As my final project, I built a website to design your own garden with search and drag & drop functions. Each garden plan is autosaved with every change the user makes to the plan.</p><br>
-          <p>TECH USED: Rails, HTML, Sass and JS</p>
-        </div>
-        <div>
-          <span><a class="left" href="https://pacific-peak-96393.herokuapp.com/" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/hen-chow/garden-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="row project-row">
-      <div class="project-info center bottom">
-        <img class="project-feature" src="img/print_lab_screen_resized.png">
-      </div>
-      <div class="project-info center bottom">
-        <div>
-          <h3 class="small-headline center">Print Lab</h3>
-          <p>A group project where we built an ecommerce store to print customised t-shirts by uploading own design and update design through a drag & resize functions. I built a full online shop system, integrating Stripe as the payment gateway.</p><br>
-          <p>TECH USED: JS, HTML, CSS, Rails and Stripe API</p>
-        </div>
-        <div>
-          <span><a class="left" href="https://tshirt-app.herokuapp.com/" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/hen-chow/tshirt-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="row project-row">
-      <div class="project-info center bottom">
-        <img class="project-feature" src="img/minimalist_baker_screen_resized.png">
-      </div>
-      <div class="project-info center bottom">
-        <div>
-          <h3 class="small-headline center">The Minimalist Baker</h3>
-          <p>As my first Rails project, I created a web application to add and share recipes by the baking community with a rating and review function. User can also search for their favourite recipes.</p><br> <p>TECH USED: JS, HTML, CSS and Rails</p>
-        </div>
-        <div>
-          <span><a class="left" href="https://shrouded-scrubland-35912.herokuapp.com" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/hen-chow/baking-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="row project-row">
-      <div class="project-info center bottom">
-        <img class="project-feature" src="img/eat_smart_screen_resized.png">
-      </div>
-      <div class="project-info center bottom">
-        <div>
-          <h3 class="small-headline center">Eat Smart</h3>
-          <p>Awarded Top 5 at 2017 NASA SpaceApps - Our group created a sustainable food app to help consumers work out the sustainability of their meals based on seasonality, food miles, CO2 emission and energy usage.</p><br>
-          <p>TECH USED: React JS, React-Redux, Node JS</p>
-        </div>
-        <div>
-          <span><a class="left" href="http://eatsmart-sasyd.herokuapp.com/" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/pscarey/spaceapps" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact">
-    <div class="container">
-      <div class="center">
-        <h2 class="headline center">Say Hello!</h2>
-        <h6>Feel free to get in touch - I'd love to hear from you</h6>
-      </div>
-      <div class="row contact-row">
-        <div class="contact-icon bottom">
-          <i class="fa fa-phone-square" aria-hidden="true"></i>
-          <span class="left-align light">0419 866 886</span>
-        </div>
-        <div class="contact-icon bottom">
-          <i class="fa fa-github" aria-hidden="true"></i>
-          <span class="left-align light"><a href="https://github.com/hen-chow" target="_blank">github.com/hen-chow</a></span>
-        </div>
-        <div class="contact-icon bottom">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span class="left-align light"><a href="mailto:henchow@gmail.com" target="_top">henchow@gmail.com</a></span>
-        </div>
-        <div class="contact-icon bottom">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <span class="left-align light"><a href="https://www.linkedin.com/in/henchow/" target="_blank">www.linkedin.com/in/henchow</a></span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="center">
-        <h5>Thanks for dropping by...</h5>
         <br>
-        <p class="footer-text">Hope to hear from you soon</p>
-      </div>
-      <div class="center">
-        <h6>Connect</h6>
+        <h1>My technical skills</h1>
         <ul>
-          <li><a class="footer-text" href="https://www.linkedin.com/in/henchow/" target="_blank">LinkedIn</a></li>
-          <li><a class="footer-text" href="https://github.com/hen-chow" target="_blank">GitHub</a></li>
-          <li><a class="footer-text" href="mailto:henchow@gmail.com" target="_top">Email</a></li>
+          <li>React.js</li>
+          <li>Javascript</li>
+          <li>Redux</li>
+          <li>NodeJS</li>
+          <li>Ruby / Rails</li>
+          <li>Typescript</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>PostGreSQL</li>
+          <li>MongoDB</li>
         </ul>
-      </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="center">
-          <h6>Made by Hen Chow 2017</h6>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  </body>
+    <div class="text-container" id="work">
+        <h1>Work</h1>
+        <img class="project-feature" src="img/garden_wizard_screen_resized.png">
+        <h2>Garden Wizard</h2>
+        <p>As my final project, I built a website to design your own garden with search and drag & drop functions. Each garden plan is autosaved with every change the user makes to the plan.</p><br>
+        <p>TECH USED: Rails, HTML, Sass and JS</p>
+        <span><a class="left" href="https://pacific-peak-96393.herokuapp.com/" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/hen-chow/garden-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
+        
+        <img class="project-feature" src="img/print_lab_screen_resized.png">
+        <h2>Print Lab</h2>
+        <p>A group project where we built an ecommerce store to print customised t-shirts by uploading own design and update design through a drag & resize functions. I built a full online shop system, integrating Stripe as the payment gateway.</p><br>
+        <p>TECH USED: JS, HTML, CSS, Rails and Stripe API</p>
+        <span><a class="left" href="https://tshirt-app.herokuapp.com/" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left" href="https://github.com/hen-chow/tshirt-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a></span>
+
+        <img class="project-feature" src="img/minimalist_baker_screen_resized.png">
+        <h2>The Minimalist Baker</h2>
+        <p>As my first Rails project, I created a web application to add and share recipes by the baking community
+            with a rating and review function. User can also search for their favourite recipes.</p><br>
+        <p>TECH USED: JS, HTML, CSS and Rails</p>
+        <span>
+          <a class="left" href="https://shrouded-scrubland-35912.herokuapp.com" target="_blank"><i class="projects fa fa-desktop" aria-hidden="true"></i></a>
+          <a class="left" href="https://github.com/hen-chow/baking-app" target="_blank"><i class="projects fa fa-github" aria-hidden="true"></i></a>
+        </span>
+        
+        <img class="project-feature" src="img/eat_smart_screen_resized.png">
+        <h2>Eat Smart</h2>
+        <p>Awarded Top 5 at 2017 NASA SpaceApps - Our group created a sustainable food app to help consumers work
+            out the sustainability of their meals based on seasonality, food miles, CO2 emission and energy usage.
+        </p><br>
+        <p>TECH USED: React JS, React-Redux, Node JS</p>
+        <span><a class="left" href="http://eatsmart-sasyd.herokuapp.com/" target="_blank"><i
+                    class="projects fa fa-desktop" aria-hidden="true"></i></a><a class="left"
+                href="https://github.com/pscarey/spaceapps" target="_blank"><i class="projects fa fa-github"
+                    aria-hidden="true"></i></a></span>
+    </div>
+
+    <div class="text-container" id="contact">
+        <h1>Say Hello!</h1>
+        <p>Feel free to get in touch - I'd love to hear from you</p>
+        <p>Ph: +1-(206)-673-1910</p>
+        <p><a href="mailto:henchow@gmail.com" target="_top">henchow@gmail.com</a></p>
+        <p><a href="https://github.com/hen-chow" target="_blank">github.com/hen-chow</a></p>
+        <p><a href="https://www.linkedin.com/in/henchow/" target="_blank">www.linkedin.com/in/henchow</a></p>
+    </div>
+
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
